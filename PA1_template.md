@@ -1,6 +1,16 @@
 # Reproducible Research: Peer Assessment 1
 
 
+```r
+## Note: the plot images are stored in seprate folder with same name of the html file
+```
+
+## Note: the plot images are stored in seprate folder with same name of the html file
+
+
+```r
+## Note: the plot images are stored in seprate folder with same name of the html file
+```
 ## Loading and preprocessing the data
 
 
@@ -21,7 +31,7 @@ g <- ggplot(data = steps_per_day, aes(x = date, y = total))
 g + geom_histogram(stat="identity") + ylab("total steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
 
 mean
 
@@ -53,7 +63,7 @@ g <- ggplot(data = steps_per_interval, aes(x = interval, y = average))
 g + geom_line() + ylab("average steps per interval")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
 
 interval that contains the maximum number of steps
 
@@ -94,7 +104,7 @@ g <- ggplot(data = steps_per_day_filled_nas, aes(x = date, y = total))
 g + geom_histogram(stat="identity") + ylab("total steps per day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
 
 mean
 
@@ -130,4 +140,4 @@ g <- ggplot(data = steps_per_interval_by_weekday, aes(x = interval, y = average)
 g + geom_line() + ylab("average steps per interval") + facet_grid(wd ~ .)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-13-1.png) 
